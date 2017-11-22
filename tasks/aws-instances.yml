@@ -18,7 +18,6 @@
       region: "{{ cloud_vpc_data.region }}"
       filters:
         vpc-id: "{{ vpc_id }}"
-        # "tag:Name": "{{ cloud_instance_item.name | default(omit) }}"
         "tag:Environment": "{{ cloud_vpc_data.project }}"
     register: instance_facts
 
