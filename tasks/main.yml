@@ -7,10 +7,6 @@
   tags:
    - security-groups
 
-# - include_tasks: "routes.yml"
-#   tags:
-#     - routes
-
 - include_tasks: "networks.yml"
   tags:
     - networks
